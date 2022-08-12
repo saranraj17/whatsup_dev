@@ -120,4 +120,5 @@ address='coimbatore,tamilnadu';/*if possible to change already added values=YES 
 32)	AVG=select avg(column name) from tablename;
 
 last modification file
-
+adding the audio call features
+adding the video call features
