@@ -1,0 +1,123 @@
+1)	create database syntax;/*creating a database=create database databasename*/
+
+2)	use syntax;/*use the database=use databasename*/
+
+3)	create table concepts (name varchar(50),serial_number int);/*creating a table=create table tablename(variables with datatype)*/
+
+4)	insert into concepts values('Harivaratharaj','1223');/*insert the values=insert into tablename(values inside the single codes)*/
+
+5)	insert into concepts values('dinesh',1225);/*int values accept with,without single codes*/
+
+6)	select*from concept;/*view the table=select*from tablename*/
+
+7)	sp_rename 'concepts','concept';/*change the tablename=sp_rename 'oldtablename','newtablename'*//*sp==STORED PROCEDURE*/
+
+8)	sp_rename 'concept.serial_number','Rollno','column';/*change column name=sp_rename 'tablename.oldcolumnname','newcolumnname','coloumn';*/
+
+
+9)	alter table concept add phonenumber varchar(10);/*To add additional column=alter table tablename add newcolumnname datatype()*/
+
+10)	update concept set phonenumber='7871265187' where name='Harivaratharaj';/*add values in new column and where to add the values=update tablename set newcolumnname='values' where oldcolumnname='values'*/
+11)	delete from concept where serial_number=1225;/*delete row=delete from tablename where columnname='values';*/
+
+12)	truncate table  concept;/*clear all values in table=truncate table tablename;*/
+
+
+13)	drop table concept;/*delete tablename in database=drop table tablename;*/
+
+14)	create table concepts (name varchar(50)primary key,serial_number int)/*add primary key=variablename datatype+primary key*/
+
+15)	create table concept (name varchar(50)foreign key references concepts,address varchar(50));/*add same variable in next table=primarykey variablename foreignkey references primarykeytablename;*/
+
+16)	insert into concept values('Harivaratharaj','75/128,soudammen kovil,pn.palayam');/*possible to add one or more rows to same value in foreignkey=yes possible to add moretimes in same values that values are have in primary key in existing table*/
+
+17)	insert into concept values('Harivaratharaj','coimbatore,tamilnadu');/*if any new values add in foreign key=NO cant add newvalues can add primarykey values only manytimes to add to rows;*/
+
+
+18)	update concept set name='suganth' where 
+address='coimbatore,tamilnadu';/*if possible to change already added values=YES can add usimg update tablename set changesvariable='values' where variablename='values';*/
+
+19)	create table demo1 (name varchar(50)primary key,serial_number int)/*add primary key=variablename datatype+primary key*/
+
+20)	create table demo2 (name varchar(50)foreign key references demo1,serial_number int)/*add primary key=variablename datatype+primary key*/
+
+21)	select top 5spprice from spd;/*TOP=select top 5columnname from tablename*/
+
+22)	select * from spd order by spname desc;/*select * from tablename order by columnname desc;*/
+
+23)	select * from spd order by spprice desc; /*select * from tablename order by columnname desc;*/
+
+24)	select * from spd order by spprice asc;/*select * from tablename order by columnname asc;*/
+
+25)	select * from spd where spprice between 5000 and 56000;/*BETWEEN=select * from tablename where columnname between price1 and price2;*/
+
+26)	select * from spd where spname='lap' or spprice=28000;/*OR=select * from tablename where columnname='value' or (same or other)colunmname='value'*/
+
+27)	select * from spd where spname='lap' and spprice=5000; /*AND=select * from tablename where columnname='value' and (same)colunmname='value'*/
+
+28)	update spd set spname='lap' where spprice=20000;/*TO CHANGE COLUMNNAME=update tablename set columnname='newvalue' where coulunmname='value'*/
+
+29)	select distinct spname from spd; distinct=select distinct columnname from tablename;
+
+30)	select max(spprice) from spd;/*MAX=select max(column name) from tablename;*/
+
+31)	select min(spprice) from spd;/*MIN=select min(column name) from tablename;*/
+
+32)	select count(spprice) from spd;/*COUNT=select count(column name) from tablename;*/
+
+33)	select sum(spprice) from spd;/*SUM=select sum(column name) from tablename;*/
+
+34)	select avg(spstorage) from spd;/*AVG=select avg(column name) from tablename;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1)	creating a database=create database databasename
+2)	use the database=use databasename
+3)	creating a table=create table tablename(variables with datatype)
+4)	insert the values=insert into tablename(values inside the single codes)
+5)	int values accept with,without single codes
+6)	view the table=select*from tablename
+7)	change the tablename=sp_rename 'oldtablename','newtablename'*//*sp==STORED PROCEDURE
+8)	To add additional column=alter table tablename add newcolumnname datatype()
+9)	add values in new column and where to add the values=update tablename set newcolumnname='values' where oldcolumnname='values'
+10)	delete row=delete from tablename where columnname='values';
+11)	clear all values in table=truncate table tablename;
+12)	delete tablename in database=drop table tablename;
+13)	add primary key=variablename datatype+primary key
+14)	add same variable in next table=primarykey variablename foreignkey references primarykeytablename;
+15)	possible to add one or more rows to same value in foreignkey=yes possible to add moretimes in same values that values are have in primary key in existing table
+16)	if any new values add in foreign key=NO cant add newvalues can add primarykey values only manytimes to add to rows;
+17)	if possible to change already added values=YES can add usimg update tablename set changesvariable='values' where variablename='values';
+18)	add primary key=variablename datatype+primary key
+19)	add primary key=variablename datatype+primary key
+20)	TOP=select top 5columnname from tablename
+21)	Descending=select * from tablename order by columnname desc;
+22)	Ascending=select * from tablename order by columnname asc;
+23)	BETWEEN=select * from tablename where columnname between price1 and price2;
+24)	OR=select * from tablename where columnname='value' or (same or other)colunmname='value'
+25)	AND=select * from tablename where columnname='value' and (same)colunmname='value'
+26)	TO CHANGE COLUMNNAME=update tablename set columnname='newvalue' where coulunmname='value'
+
+27)	distinct=select distinct columnname from tablename;
+
+28)	MAX=select max(column name) from tablename;
+
+29)	MIN=select min(column name) from tablename;
+30)	COUNT=select count(column name) from tablename;
+31)	SUM=select sum(column name) from tablename;
+
+32)	AVG=select avg(column name) from tablename;
+
+Last seen
+
