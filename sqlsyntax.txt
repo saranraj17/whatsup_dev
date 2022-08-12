@@ -119,5 +119,5 @@ address='coimbatore,tamilnadu';/*if possible to change already added values=YES 
 
 32)	AVG=select avg(column name) from tablename;
 
-Last seen
+last modification file
 
