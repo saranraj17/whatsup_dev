@@ -71,7 +71,7 @@ address='coimbatore,tamilnadu';/*if possible to change already added values=YES 
 
 
 
-
+why you can delete below codings.
 
 
 
