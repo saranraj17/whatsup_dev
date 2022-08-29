@@ -14,7 +14,7 @@
 
 8)	sp_rename 'concept.serial_number','Rollno','column';/*change column name=sp_rename 'tablename.oldcolumnname','newcolumnname','coloumn';*/
 
-
+*******************
 9)	alter table concept add phonenumber varchar(10);/*To add additional column=alter table tablename add newcolumnname datatype()*/
 
 10)	update concept set phonenumber='7871265187' where name='Harivaratharaj';/*add values in new column and where to add the values=update tablename set newcolumnname='values' where oldcolumnname='values'*/
