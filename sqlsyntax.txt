@@ -21,7 +21,7 @@
 11)	delete from concept where serial_number=1225;/*delete row=delete from tablename where columnname='values';*/
 
 12)	truncate table  concept;/*clear all values in table=truncate table tablename;*/
-
+24... this is a coding update
 
 13)	drop table concept;/*delete tablename in database=drop table tablename;*/
 
