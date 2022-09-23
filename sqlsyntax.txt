@@ -32,7 +32,7 @@
 16)	insert into concept values('Harivaratharaj','75/128,soudammen kovil,pn.palayam');/*possible to add one or more rows to same value in foreignkey=yes possible to add moretimes in same values that values are have in primary key in existing table*/
 
 17)	insert into concept values('Harivaratharaj','coimbatore,tamilnadu');/*if any new values add in foreign key=NO cant add newvalues can add primarykey values only manytimes to add to rows;*/
-
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 18)	update concept set name='suganth' where 
 address='coimbatore,tamilnadu';/*if possible to change already added values=YES can add usimg update tablename set changesvariable='values' where variablename='values';*/
